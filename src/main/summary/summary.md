@@ -50,7 +50,7 @@ An algorithm in analysed based on time complexity and space complexity.
 **Time complexity** is a measure of the time required to run an algorithm as the input size increases.
 It quantifies the time taken by the algorithm; in other words, we can define time complexity as the performance of an algorithm.
 
-**Space complexity** of an algorithm defines the space (memory) consumed by it to produce the output for a given input.
+**Space complexity** is a measure of the resources required for the algorithm to manipulate the input data.
 
 By analyzing the complexity of any algorithm, we usually get answers to the following questions:
 - How much time does it take to generate or calculate the output?
@@ -94,3 +94,19 @@ notation (O).
 
 **Polynomial time**, **Exponential time**, **Factorial time**
 
+# Linked List
+
+***By the end you should know:***
+1. how to implement a linked list.
+2. the common operations associated with a linked list.
+3. the time complexity of each operation.
+
+- A linked list is a collection of values arranged in a linear, unidirectional sequence.
+
+## Operations
+1. push - **O(1)** : Adds a value at the front of the list.
+2. append - **O(1)** : Adds a value at the end of the list.
+3. insert - **O(1)** : Adds a value after a particular node of the list.
+4. pop - **O(1)** : Removes the value at the front of the list.
+5. remoteLast - **O(n)** : Removes the value at the end of the list.
+6. removeAfter - **O(1)** : Removes a value after a particular node of the list.

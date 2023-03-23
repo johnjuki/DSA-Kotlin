@@ -110,3 +110,21 @@ notation (O).
 4. pop - **O(1)** : Removes the value at the front of the list.
 5. remoteLast - **O(n)** : Removes the value at the end of the list.
 6. removeAfter - **O(1)** : Removes a value after a particular node of the list.
+
+### Kotlin collection interfaces
+- **Tier 1, Iterable**: An iterable type provides sequential access to its elements via an
+Iterator.
+- **Tier 2, Collection**: A collection is an iterable that provides additional
+functionality, allowing you to check if the collection contains a particular element
+or a collection of elements.
+- **Tier 3, MutableIterable**: An iterable that provides a _MutableIterator_, which
+  allows both accessing the items and removing them. 
+- **Tier 4, MutableCollection**: A collection that also provides methods to alter its
+  contained items. For example, you can **add** and **remove** elements, and even **clear**
+  the entire collection.
+
+A linked list goes all the way to **MutableCollection** interface.
+
+The **runner technique** helps solve a variety of problems associated with the linked list.
+
+

@@ -270,12 +270,12 @@ Post-order traversal always visits the nodes of a binary tree in the following o
 
 An interesting consequence of this is that the root node is always visited last.
 
-**NOTE:** 
+**NOTE:**
 
 - Each of these traversal algorithms has both time and space complexity of O(n).
 - Binary trees are a surprisingly popular topic in algorithm interviews. Questions on
-the binary tree not only require a good foundation of how traversals work, but can
-also test your understanding of **recursive** backtracking.
+  the binary tree not only require a good foundation of how traversals work, but can
+  also test your understanding of **recursive** backtracking.
 - The binary tree is the foundation to some of the most important tree structures.
   The binary search tree and AVL tree are binary trees that impose restrictions on
   the insertion/deletion behaviors.
@@ -290,12 +290,49 @@ also test your understanding of **recursive** backtracking.
 - A binary search tree, or BST, is a data structure that facilitates fast lookup, insert and removal operations.
 - It is a powerful data structure for holding sorted data.
 - a binary search tree imposes two rules on the binary tree :
-  1. The value of a left child must be less than the value of its parent.
-  2. Consequently, the value of a right child must be greater than or equal to the value
-  of its parent.
+    1. The value of a left child must be less than the value of its parent.
+    2. Consequently, the value of a right child must be greater than or equal to the value
+       of its parent.
 - Lookup, insert, and removal have an average time complexity of O(log n).
 - binary search trees drastically reduce the number of steps for add, remove, and lookup operations.
 - by definition, binary search trees can only hold values that are **Comparable.**
-- The time complexity of checking if a binary tree is a BST is **O(n)** since you need to traverse through the entire tree once.
-- There is also a space complexity of **O(n)** when checking if a binary tree is a BST since you're making _n_ recursive calls.
+- The time complexity of checking if a binary tree is a BST is **O(n)** since you need to traverse through the entire
+  tree once.
+- There is also a space complexity of **O(n)** when checking if a binary tree is a BST since you're making _n_ recursive
+  calls.
 - The performance of a BST will degrade to O(n) as the tree becomes unbalanced.
+
+# AVL Trees
+
+***By the end you should know:***
+
+1. how the balance of a binary search tree can impact performance.
+2. how to implement the AVL tree from scratch.
+
+- An AVL tree is a _self-balancing_ binary search tree.
+- AVL trees maintain balance by adjusting the structure of the tree when the tree becomes unbalanced.
+- A balanced tree is key to optimizing the performance of the binary search tree.
+- Three main **states** of balance:
+    1. **Perfect balance** - Every level of the tree is filled with nodes from top to bottom.
+    2. **"Good-enough" balance** - in most cases of binary trees, this is the best you can do.
+    3. **unbalanced** - binary search trees in this state suffer from various levels of performance loss depending on
+       the degree of imbalance.
+
+- To keep a binary tree balanced, you need to measure the balance of the tree.
+- The AVL tree achieves this with a height property in each node.
+- The height of a node is the longest distance from the current node to a leaf node.
+- The height of the left and right children of each node must differ at most by 1.
+- This is known as the **balance factor**.
+
+## Rotations
+
+Rotations are procedures used to balance a binary search tree.
+- **left**, **left-right**, **right**, **right-left**
+
+## Left-rotation
+
+Takeaways from this:
+1. in-order traversal for the nodes remains the same.
+2. The _depth_ of the tree is reduced by one level after the rotation.
+3. 
+

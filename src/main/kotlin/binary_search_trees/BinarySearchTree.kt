@@ -2,7 +2,7 @@ package binary_search_trees
 
 import binary_trees.BinaryNode
 
-class BinarySearchTree<T : Comparable<T>>() {
+class BinarySearchTree<T : Comparable<T>> {
 
     var root: BinaryNode<T>? = null
 

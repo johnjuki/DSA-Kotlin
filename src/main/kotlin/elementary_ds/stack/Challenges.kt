@@ -39,6 +39,8 @@ private fun <T : Any> LinkedList<T>.printInReverse() {
     }
 }
 
+// 2
+
 private fun String.parenthesesValidation(): Boolean {
     val stack = StackImpl<Char>()
     for (char in this) {

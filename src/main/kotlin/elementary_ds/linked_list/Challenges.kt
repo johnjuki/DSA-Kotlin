@@ -77,11 +77,11 @@ fun main() {
 
 // 1
 
-fun <T : Any> LinkedList<T>.printInReverse() {
+private fun <T : Any> LinkedList<T>.printInReverse() {
     this.nodeAt(0)?.printInReverse()
 }
 
-fun <T : Any> Node<T>.printInReverse() {
+private fun <T : Any> Node<T>.printInReverse() {
     this.next?.printInReverse()
     if (this.next != null) {
         print(" <- ")
@@ -91,14 +91,14 @@ fun <T : Any> Node<T>.printInReverse() {
 
 // 2
 
-fun <T : Any> LinkedList<T>.printMiddleNode() {
+private fun <T : Any> LinkedList<T>.printMiddleNode() {
     val middleIndex = this.size / 2
     val middleNode = this.nodeAt(middleIndex)?.value
     println(middleNode)
 }
 
 // Runner technique
-fun <T : Any> LinkedList<T>.getMiddle(): Node<T>? {
+private fun <T : Any> LinkedList<T>.getMiddle(): Node<T>? {
     var slow = this.nodeAt(0)
     var fast = this.nodeAt(0)
 
@@ -122,7 +122,7 @@ private fun <T : Any> addInReverse(list: LinkedList<T>, node: Node<T>) {
     list.append(node.value)
 }
 
-fun <T : Any> LinkedList<T>.reversedLinkedList(): LinkedList<T> {
+private fun <T : Any> LinkedList<T>.reversedLinkedList(): LinkedList<T> {
     val result = LinkedList<T>()
     val head = this.nodeAt(0)
     if (head != null) {
@@ -133,7 +133,7 @@ fun <T : Any> LinkedList<T>.reversedLinkedList(): LinkedList<T> {
 
 // 4
 
-fun <T : Comparable<T>> LinkedList<T>.mergeSorted(otherList: LinkedList<T>): LinkedList<T> {
+private fun <T : Comparable<T>> LinkedList<T>.mergeSorted(otherList: LinkedList<T>): LinkedList<T> {
     if (this.isEmpty()) return otherList
     if (otherList.isEmpty()) return this
 

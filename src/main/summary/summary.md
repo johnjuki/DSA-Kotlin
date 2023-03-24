@@ -127,4 +127,15 @@ A linked list goes all the way to **MutableCollection** interface.
 
 The **runner technique** helps solve a variety of problems associated with the linked list.
 
+# Stack Data Structures
+- The main goal of building a stack is to enforce how you access your data.
+
+## Operations
+1. **Push - O(1)**: Adding an element on top of the stack.
+2. **Pop - O(1)**: Removing the top element of the stack.
+
+- This means that you can only add or remove elements from one side of the data structure.
+- A stack is known as the LIFO (last-in-first-out) data structure.
+- Stacks are crucial to problems that _search_ trees and graphs.
+
 

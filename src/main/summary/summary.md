@@ -199,4 +199,34 @@ You can create stacks using:
 - leveraging this data structure improved dequeue() time complexity to an amortized O(1) operation.
 - this implementation beats linked list in terms of spatial locality.
 
+# Trees
+
+- Trees are a useful way to organize information where performance is critical.
+- it introduces the concept of children and parents.
+- used to tackle many recurring challenges in software development, such as:
+    1. Representing hierarchical relationships.
+    2. Managing sorted data.
+    3. Facilitating fast lookup operations.
+
+Traversing trees?
+
+There are multiple strategies for different trees and different problems.
+In all of these ways you can **visit** the node and use the information into them.
+
+## 1. Depth-first traversal
+
+- Depth-first traversal starts at the root node and explores the tree as far as possible along each branch before
+  reaching a leaf and then backtracking.
+- Uses recursion to process the next node. Recursion is best used because is more simple an elegant to code.
+
+## 2. Level-order traversal
+
+- Level-order traversal is a technique that visits each node of the tree based on the depth of the nodes.
+- Starting at the root, every node on a level is visited before going to a lower level.
+- Here you use a **queue** to ensure that nodes are visited in the right level-order.
+
+## Search
+
+- In search, you get different objects depending on what traversal you use.
+
 

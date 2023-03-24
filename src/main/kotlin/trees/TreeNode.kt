@@ -57,4 +57,4 @@ class TreeNode<T : Any>(val value: T) {
     }
 }
 
-typealias Visitor<T> = (TreeNode<T>) -> Unit
+private typealias Visitor<T> = (TreeNode<T>) -> Unit

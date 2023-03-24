@@ -4,5 +4,7 @@
 4. What is space complexity?
 5. What is a linked list?
 6. Implement all common linked list operations.
-7. 
+7. What is a binary tree?
+8. construct the traversal algorithms for binary trees.
+9. 
 

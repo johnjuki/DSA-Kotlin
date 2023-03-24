@@ -229,4 +229,73 @@ In all of these ways you can **visit** the node and use the information into the
 
 - In search, you get different objects depending on what traversal you use.
 
+# Binary Trees
 
+- A binary tree is a tree in which each node has at most **two** children,
+  often referred to as the **left** and **right** children.
+- Binary trees serve as basis for many tree structures and algorithms.
+
+***By the end you should know:***
+
+1. how to build a binary tree.
+2. the three most important tree traversal algorithms.
+
+## Traversal algorithms
+
+Traversal algorithms for binary trees: **in-order, pre-order** and **post-order** traversals
+
+### 1. In-order traversal
+
+In-order traversal visits the nodes of a binary tree in the following order, starting from the root node:
+
+- If the current node has a left child, recursively visit this child first.
+- Then visit the node itself.
+- If the current node has a right child, recursively visit this child.
+
+If the tree nodes are structured in a certain way, in-order traversal visits them in ascending order.
+
+### 2. Pre-order traversal
+
+Pre-order traversal visits the nodes of a binary tree in the following order:
+
+- Visits the current node first.
+- Recursively visits the left and right child.
+
+### 3. Post-order traversal
+
+Post-order traversal always visits the nodes of a binary tree in the following order:
+
+- Recursively visits the left and right child.
+- Only visits the current node after the left and right child have been visited recursively.
+
+An interesting consequence of this is that the root node is always visited last.
+
+**NOTE:** 
+
+- Each of these traversal algorithms has both time and space complexity of O(n).
+- Binary trees are a surprisingly popular topic in algorithm interviews. Questions on
+the binary tree not only require a good foundation of how traversals work, but can
+also test your understanding of **recursive** backtracking.
+- The binary tree is the foundation to some of the most important tree structures.
+  The binary search tree and AVL tree are binary trees that impose restrictions on
+  the insertion/deletion behaviors.
+
+# Binary Search Trees
+
+***By the end you should know:***
+
+1. how to implement a binary search tree from scratch.
+2. the benefit of a BST relative to an array.
+
+- A binary search tree, or BST, is a data structure that facilitates fast lookup, insert and removal operations.
+- It is a powerful data structure for holding sorted data.
+- a binary search tree imposes two rules on the binary tree :
+  1. The value of a left child must be less than the value of its parent.
+  2. Consequently, the value of a right child must be greater than or equal to the value
+  of its parent.
+- Lookup, insert, and removal have an average time complexity of O(log n).
+- binary search trees drastically reduce the number of steps for add, remove, and lookup operations.
+- by definition, binary search trees can only hold values that are **Comparable.**
+- The time complexity of checking if a binary tree is a BST is **O(n)** since you need to traverse through the entire tree once.
+- There is also a space complexity of **O(n)** when checking if a binary tree is a BST since you're making _n_ recursive calls.
+- The performance of a BST will degrade to O(n) as the tree becomes unbalanced.

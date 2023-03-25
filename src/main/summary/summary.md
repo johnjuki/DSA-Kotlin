@@ -360,3 +360,30 @@ Takeaways from this:
   like it’s going to be O(n²) to search, consider doing some upfront sorting. With
   upfront sorting, you can use binary searching to reduce complexity to the cost of the
   sort at O(n log n).
+
+# Heap
+
+- A heap is a complete binary tree data structure also known as a **binary heap** that you can construct using an array.
+- Heaps come in two flavors:
+    1. **Max**heap, in which elements with a **higher** value have higher priority.
+    2. **Min**heap, in which elements with a **lower** value have higher priority.
+
+- A heap has an important characteristic that must always be satisfied. This is known as the **heap invairant** or *
+  *heap property**.
+- Some useful Heap applications:
+    1. Calculating minimum or maximum element of a collection.
+    2. Heap sort.
+    3. Implementing a priority queue.
+    4. Supporting graph algorithms, like Prim's or Dijkstra's, with a priority queue.
+- Making an existing array following the heap properties is an operation usually called **heapify**
+- **Operations**
+  - remove - O(log n)
+  - insert - O(log n)
+  - search - O(n)
+  - peek - O(1)
+- The heap data structure is good for maintaining the highest or lowest priority element.
+- Every time you insert or remove items from the heap, you must check to see if it satisfies the rules of the priority.
+
+# Priority Queues
+
+

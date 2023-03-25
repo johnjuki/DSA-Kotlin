@@ -345,3 +345,18 @@ Takeaways from this:
   many different values. For example, “car”, “carbs”, and “care” can share the first
   three letters of the word.
 
+# Binary Search
+
+- Binary search is one of the most efficient searching algorithms with a time complexity of O(log n).
+- Two conditions need to be met before you can use binary search:
+    1. Te collection must be able to perform index manipulation in constant time.
+    2. The collection must be **sorted**.
+
+### IMPORTANT:
+
+- Binary search is a powerful algorithm to learn, and it comes up often in programming
+  interviews. Whenever you read something along the lines of “Given a sorted array…”,
+  consider using the binary search algorithm. Also, if you’re given a problem that looks
+  like it’s going to be O(n²) to search, consider doing some upfront sorting. With
+  upfront sorting, you can use binary searching to reduce complexity to the cost of the
+  sort at O(n log n).

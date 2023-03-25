@@ -327,12 +327,21 @@ An interesting consequence of this is that the root node is always visited last.
 ## Rotations
 
 Rotations are procedures used to balance a binary search tree.
+
 - **left**, **left-right**, **right**, **right-left**
 
 ## Left-rotation
 
 Takeaways from this:
+
 1. in-order traversal for the nodes remains the same.
 2. The _depth_ of the tree is reduced by one level after the rotation.
-3. 
+
+# Tries
+
+- A trie is a tree that specializes in storing data that can be represented as a collection,such as english words
+- Tries provide great performance metrics in regards to prefix matching.
+- Tries are relatively memory efficient since individual nodes can be shared between
+  many different values. For example, “car”, “carbs”, and “care” can share the first
+  three letters of the word.
 

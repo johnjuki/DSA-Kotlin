@@ -377,13 +377,26 @@ Takeaways from this:
     4. Supporting graph algorithms, like Prim's or Dijkstra's, with a priority queue.
 - Making an existing array following the heap properties is an operation usually called **heapify**
 - **Operations**
-  - remove - O(log n)
-  - insert - O(log n)
-  - search - O(n)
-  - peek - O(1)
+    - remove - O(log n)
+    - insert - O(log n)
+    - search - O(n)
+    - peek - O(1)
 - The heap data structure is good for maintaining the highest or lowest priority element.
 - Every time you insert or remove items from the heap, you must check to see if it satisfies the rules of the priority.
 
 # Priority Queues
 
+- A priority queue dequeues elements in priority order.
+- A priority queue can have either a:
+    1. **Max-priority**: The element at the front is always the largest.
+    2. **Min-priority**: The element at the front is always the smallest.
+- It is especially useful when you need to identify the maximum or minimum value within a list of elements.
+- Some Applications:
+    1. **Dijkstra's algorithm**: Uses a priority queue to calculate the minimum cost.
+    2. **A(*) pathfinding algorithm** : uses a priority queue to track the unexplored routes that will produce the path
+       with the shortest length.
+    3. **Heap sort**: Many heap sorts use a priority queue.
+    4. **Huffman coding**: Useful for building a compression tree.
+       A min-priority queue is used to repeatedly find two nodes with the smallest frequency that don't yet have a
+       parent node.
 

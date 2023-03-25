@@ -6,5 +6,6 @@
 6. Implement all common linked list operations.
 7. What is a binary tree?
 8. construct the traversal algorithms for binary trees.
-9. 
+9. Composition over (implementation) inheritance. - Priority queue key points.
+10. 
 

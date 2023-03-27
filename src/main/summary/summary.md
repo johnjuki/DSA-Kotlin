@@ -31,7 +31,7 @@ Mutating functions: **also** & **apply**
   The data in each bucket is ordered, bu the general order of the data in the map is unpredictable.
 - Inserting into a map is a constant-time operation.
 
-# Complexity analysis
+## Complexity analysis
 
 An algorithm becomes more powerful when used with proper data structures.
 
@@ -81,7 +81,7 @@ The complexity of an algorithm can broadly fall into the following three categor
   by an algorithm to produce the output. It's also represented as a Big O
   notation (O).
 
-## TIme Complexity
+### TIme Complexity
 
 - It's a measure of the time required to run an algorithm as the input size increases.
 
@@ -110,7 +110,7 @@ The complexity of an algorithm can broadly fall into the following three categor
 
 **Polynomial time**, **Exponential time**, **Factorial time**
 
-# Linked List
+## Linked List
 
 ***By the end you should know:***
 
@@ -120,7 +120,7 @@ The complexity of an algorithm can broadly fall into the following three categor
 
 - A linked list is a collection of values arranged in a linear, unidirectional sequence.
 
-## Operations
+### Operations
 
 1. push - **O(1)** : Adds a value at the front of the list.
 2. append - **O(1)** : Adds a value at the end of the list.
@@ -129,7 +129,7 @@ The complexity of an algorithm can broadly fall into the following three categor
 5. remoteLast - **O(n)** : Removes the value at the end of the list.
 6. removeAfter - **O(1)** : Removes a value after a particular node of the list.
 
-### Kotlin collection interfaces
+#### Kotlin collection interfaces
 
 - **Tier 1, Iterable**: An iterable type provides sequential access to its elements via an
   Iterator.
@@ -146,11 +146,11 @@ A linked list goes all the way to **MutableCollection** interface.
 
 The **runner technique** helps solve a variety of problems associated with the linked list.
 
-# Stack Data Structures
+## Stack Data Structures
 
 - The main goal of building a stack is to enforce how you access your data.
 
-## Operations
+### Operations
 
 1. **Push - O(1)**: Adding an element on top of the stack.
 2. **Pop - O(1)**: Removing the top element of the stack.
@@ -159,7 +159,7 @@ The **runner technique** helps solve a variety of problems associated with the l
 - A stack is known as the LIFO (last-in-first-out) data structure.
 - Stacks are crucial to problems that _search_ trees and graphs.
 
-# Queues
+## Queues
 
 ***By the end you should know:***
 
@@ -171,7 +171,7 @@ The **runner technique** helps solve a variety of problems associated with the l
   will always be the first one removed.
 - Queues are handy when you need to maintain the order of your elements to process later.
 
-## Operations
+### Operations
 
 - enqueue: Inserts an element at the back of the queue and returns true if the operation is successful.
 - dequeue: Removes the element at the front of the queue and returns it.
@@ -199,7 +199,7 @@ You can create stacks using:
 - leveraging this data structure improved dequeue() time complexity to an amortized O(1) operation.
 - this implementation beats linked list in terms of spatial locality.
 
-# Trees
+## Trees
 
 - Trees are a useful way to organize information where performance is critical.
 - it introduces the concept of children and parents.
@@ -213,13 +213,13 @@ Traversing trees?
 There are multiple strategies for different trees and different problems.
 In all of these ways you can **visit** the node and use the information into them.
 
-## 1. Depth-first traversal
+### 1. Depth-first traversal
 
 - Depth-first traversal starts at the root node and explores the tree as far as possible along each branch before
   reaching a leaf and then backtracking.
 - Uses recursion to process the next node. Recursion is best used because is more simple an elegant to code.
 
-## 2. Level-order traversal
+### 2. Level-order traversal
 
 - Level-order traversal is a technique that visits each node of the tree based on the depth of the nodes.
 - Starting at the root, every node on a level is visited before going to a lower level.
@@ -229,7 +229,7 @@ In all of these ways you can **visit** the node and use the information into the
 
 - In search, you get different objects depending on what traversal you use.
 
-# Binary Trees
+## Binary Trees
 
 - A binary tree is a tree in which each node has at most **two** children,
   often referred to as the **left** and **right** children.
@@ -240,11 +240,11 @@ In all of these ways you can **visit** the node and use the information into the
 1. how to build a binary tree.
 2. the three most important tree traversal algorithms.
 
-## Traversal algorithms
+### Traversal algorithms
 
 Traversal algorithms for binary trees: **in-order, pre-order** and **post-order** traversals
 
-### 1. In-order traversal
+#### 1. In-order traversal
 
 In-order traversal visits the nodes of a binary tree in the following order, starting from the root node:
 
@@ -254,14 +254,14 @@ In-order traversal visits the nodes of a binary tree in the following order, sta
 
 If the tree nodes are structured in a certain way, in-order traversal visits them in ascending order.
 
-### 2. Pre-order traversal
+#### 2. Pre-order traversal
 
 Pre-order traversal visits the nodes of a binary tree in the following order:
 
 - Visits the current node first.
 - Recursively visits the left and right child.
 
-### 3. Post-order traversal
+#### 3. Post-order traversal
 
 Post-order traversal always visits the nodes of a binary tree in the following order:
 
@@ -280,7 +280,7 @@ An interesting consequence of this is that the root node is always visited last.
   The binary search tree and AVL tree are binary trees that impose restrictions on
   the insertion/deletion behaviors.
 
-# Binary Search Trees
+## Binary Search Trees
 
 ***By the end you should know:***
 
@@ -302,7 +302,7 @@ An interesting consequence of this is that the root node is always visited last.
   calls.
 - The performance of a BST will degrade to O(n) as the tree becomes unbalanced.
 
-# AVL Trees
+## AVL Trees
 
 ***By the end you should know:***
 
@@ -324,20 +324,20 @@ An interesting consequence of this is that the root node is always visited last.
 - The height of the left and right children of each node must differ at most by 1.
 - This is known as the **balance factor**.
 
-## Rotations
+### Rotations
 
 Rotations are procedures used to balance a binary search tree.
 
 - **left**, **left-right**, **right**, **right-left**
 
-## Left-rotation
+### Left-rotation
 
 Takeaways from this:
 
 1. in-order traversal for the nodes remains the same.
 2. The _depth_ of the tree is reduced by one level after the rotation.
 
-# Tries
+## Tries
 
 - A trie is a tree that specializes in storing data that can be represented as a collection,such as english words
 - Tries provide great performance metrics in regards to prefix matching.
@@ -345,7 +345,7 @@ Takeaways from this:
   many different values. For example, “car”, “carbs”, and “care” can share the first
   three letters of the word.
 
-# Binary Search
+## Binary Search
 
 - Binary search is one of the most efficient searching algorithms with a time complexity of O(log n).
 - Two conditions need to be met before you can use binary search:
@@ -361,7 +361,7 @@ Takeaways from this:
   upfront sorting, you can use binary searching to reduce complexity to the cost of the
   sort at O(n log n).
 
-# Heap
+## Heap
 
 - A heap is a complete binary tree data structure also known as a **binary heap** that you can construct using an array.
 - Heaps come in two flavors:
@@ -384,7 +384,7 @@ Takeaways from this:
 - The heap data structure is good for maintaining the highest or lowest priority element.
 - Every time you insert or remove items from the heap, you must check to see if it satisfies the rules of the priority.
 
-# Priority Queues
+## Priority Queues
 
 - A priority queue dequeues elements in priority order.
 - A priority queue can have either a:
@@ -400,3 +400,4 @@ Takeaways from this:
        A min-priority queue is used to repeatedly find two nodes with the smallest frequency that don't yet have a
        parent node.
 
+# Sorting Algorithms
